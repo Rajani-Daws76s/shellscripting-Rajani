@@ -1,4 +1,4 @@
 #! /bin/bash
 USERNAME=$1
 PASSWORD=$2
-echo "Username : $(USERNAME) , Password : $(PAASWORD)"
+echo "Username : ${USERNAME} , Password : ${PAASWORD}"
