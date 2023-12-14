@@ -19,6 +19,6 @@ else
 echo "your running with sudo user"
 fi
 yum install mysql -y
-validate
+validate "installing mysql"
 yum install git -y
-validate
+validate "installing git"
