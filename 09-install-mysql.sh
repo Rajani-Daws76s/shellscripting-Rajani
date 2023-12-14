@@ -1,5 +1,6 @@
 #!/bin/bash
-if (id -u -ne 0)
+ID=$(id -u)
+if (ID -ne 0)
 then
     echo "pls run sudo user"
 else
