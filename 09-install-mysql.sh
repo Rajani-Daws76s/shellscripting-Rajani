@@ -7,7 +7,7 @@ else
 echo "your running with sudo user"
 fi
 yum install mysql -y
-if [ $? -ne 0]
+if [ $? -ne 0 ]
 then 
 echo "Error: MySQl installation failed"
 else
