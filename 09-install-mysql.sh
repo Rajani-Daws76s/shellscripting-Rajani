@@ -2,12 +2,12 @@
 ID=$(id -u) # if you run this in normal user then you will get exact o/p
 Validate()
 {
-if [ $? -ne 0 ]
+if [ $1 -ne 0 ]
 then
-    echo "ERROR:: Installing GIT is failed"
+    echo "ERROR:: $2 is failed"
     exit 1
 else
-    echo "Installing GIT is SUCCESS"
+    echo "Installing $2 is SUCCESS"
 fi
 }
 
@@ -19,6 +19,6 @@ else
 echo "your running with sudo user"
 fi
 yum install mysql -y
-validate "installing mysql"
+validate $? "installing mysql"
 yum install git -y
 validate "installing git"
