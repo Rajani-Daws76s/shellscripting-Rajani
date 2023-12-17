@@ -32,8 +32,8 @@ do
     if [$? -ne 0] #if not installed 
     then
     yum install $package -y >> $LOGFILE
-    validate $? intstalling packege 
-    else 
-    echo -e "package is already installed ..$Y Skipping $N"
+    validate $? intstalling of $packege 
+    else
+        echo -e "$package is already installed ... $Y SKIPPING $N"
     fi
 done
