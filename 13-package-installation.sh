@@ -1,4 +1,3 @@
-+ =
 #!/bin/bash
 ID=$(id -u)
 R="\e[31m"
@@ -9,7 +8,7 @@ N="\e[m"
 TIMESTAMP=$(date +%F-%h-%M-%S)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
-if [id -ne 0]
+if [ID -ne 0]
 then
 echo "$R ERROR your not running with root user $N"
 exit 1 #use other than 0
