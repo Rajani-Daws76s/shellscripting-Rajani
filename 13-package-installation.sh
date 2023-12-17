@@ -7,7 +7,6 @@ N="\e[m"
 
 TIMESTAMP=$(date +%F-%h-%M-%S)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
-
 if [ID -ne 0]
 then
 echo "$R ERROR your not running with root user $N"
@@ -15,7 +14,6 @@ exit 1 #use other than 0
 else 
 echo "your in root user"
 fi 
-
 validate (){
 if [$1 -ne 0]
 then 
