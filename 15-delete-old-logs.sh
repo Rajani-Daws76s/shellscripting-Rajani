@@ -9,7 +9,7 @@ if [ ! -d $SOURCEDIR ] # ! denotes opposite
 then 
 echo " $R Source dirctory : $SOURCEDIR does not exist $N "
 fi 
-Filestodelete=find $SOURCEDIR - type f -mtime +14 -name "*.log"
+Filestodelete= find $SOURCEDIR - type f -mtime +14 -name "*.log"
 while IFS= read -r line
 do 
 echo "Deleting files: $line"
