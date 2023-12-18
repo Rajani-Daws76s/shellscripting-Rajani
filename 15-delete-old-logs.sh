@@ -1,3 +1,4 @@
+#!/bin/bash
 SOURCE-DIR=/tmp/shell-scripting-logs
 R="\e[31m"
 G="\e[32m"
