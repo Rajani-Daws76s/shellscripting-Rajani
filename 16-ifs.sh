@@ -13,4 +13,4 @@ while IFS=":" read -r username password
 do 
 echo "username :$username"
 echo "password :$password"
-done<<<$file
+done<$file
