@@ -5,7 +5,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 #to check whether source directory exist or not
-if [ ! -d $SOURCE-DIR ] # ! denotes opposite
+if [ ! -d $SOURCEDIR ] # ! denotes opposite
 then 
 echo " $R Source dirctory : $SOURCEDIR does not exist $N "
 fi 
