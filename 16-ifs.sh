@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 file="/etc/passwd"
 R="\e[31m"
 G="\e[32m"
