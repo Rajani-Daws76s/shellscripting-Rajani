@@ -13,7 +13,7 @@ read USERNAME #user name will displayed at runtime
 echo "username is $USERNAME"
 
 echo "Pls enter USERNAME"
-read -s USERNAME #user name will displayed at runtime
+read -s USERNAME # "-s" will hide the content while you typing user name 
 echo "username is $USERNAME"
 
 
