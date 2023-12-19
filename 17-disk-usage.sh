@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DISK-USAGE=$(df -hT | grep -vE '\tmp|file')
+DISK-USAGE=$(df -hT | grep -vE '\tmp|File')
 DISK-Threshold=1
 Message=""
 while IFS=read line
