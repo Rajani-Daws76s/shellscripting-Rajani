@@ -2,15 +2,17 @@
 
 DISK_USAGE=$(df -hT | grep -vE 'tmp|File')
 DISK_THRESHOLD=1
-Message=""
+message=""
 
 while IFS= read line
-do 
-Usage=$(echo $line | awk '{print $6f}' | cut -d % -f1)
-Partition=$(echo $line | awk '{print $1f}')
-if [ $Usage -ge $DISK_THRESHOLD ]
-then
-Message="High disk usage on $Partition:$Usage \n"
-fi
-done<<<$DISK-USAGE
-echo -e "message : $Message"
+do
+    usage=$(echo $line | awk '{print $6F}' | cut -d % -f1)
+    partition=$(echo $line | awk '{print $1F}')
+    if [ $usage -ge $DISK_THRESHOLD ]
+    then
+        message+="High Disk Usage on $partition: $usage <br>"
+    fi
+done <<< $DISK_USAGE
+
+echo -e "Message: $message"
+
