@@ -3,6 +3,7 @@
 DISK_USAGE=$(df -hT | grep -vE 'tmp|File')
 DISK_THRESHOLD=1
 Message=""
+
 while IFS= read line
 do 
 Usage=$(echo $line | awk '{print $6f}' | cut -d % -f1)
